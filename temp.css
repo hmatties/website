@@ -1,0 +1,136 @@
+html {
+    font-family: Helvetica Neue, Helvetica, Open Sans Pro, sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 96vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+   text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #AD50E7;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+
+.container h2 a {
+    text-decoration: underline;
+    color: #939393;
+    transition-property: color;
+    transition: transform .2s;
+    transition-duration: 0.5s;
+    font-size: 24px;
+}
+
+.container h2 a:hover {
+    color: #AD50E7;
+    display: inline-block;
+    transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 32px;
+        color: #AD50E7;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    
+    p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 32px;
+    }
+    
+    
+    .container h2 a {
+        text-decoration: underline;
+        color: #939393;
+        transition-property: color;
+        transition: transform .2s;
+        transition-duration: 0.5s;
+        font-size: 24px;
+    }
+    
+    .container h2 a:hover {
+        color: #AD50E7;
+        display: inline-block;
+        transform: scale(1.05);
+    }
+    
+    
+}
+
+@media screen and (mid-width: 1024px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 48px;
+        color: #AD50E7;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 32px;
+    }
+    
+    
+    .container h2 a {
+        text-decoration: underline;
+        color: #939393;
+        transition-property: color;
+        transition: transform .2s;
+        transition-duration: 0.5s;
+        font-size: 24px;
+    }
+    
+    .container h2 a:hover {
+        color: #AD50E7;
+        display: inline-block;
+        transform: scale(1.05);
+    }
+    
+
+}
