@@ -48,36 +48,54 @@ p {
     margin: auto;
 }
 
+footer .copy {
+    font-size: 1rem;
+   text-align: center;
+   margin-top: 4rem;
+   font-weight: 400;
+   color: #c3c3c3;
+}
 
 
+@media screen and (max-width: 375px) {
+    
+    .container {
+        max-width: 300px !important;
+    }
+
+    .top h1 {
+        font-size: 2.3rem;
+    }
+
+}
 
 @media screen and (max-width: 767px) {
 
     .container {
-        max-width: 320px;
+        max-width: 350px;
         margin: auto;
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 2.5rem;
         color: #AD50E7;
         margin: 0%;
-        margin-top: 36px;
+        margin-top: 32px;
         margin-bottom: 10px;
     }
 
     h2{
-        font-size: 32px;
+        font-size: 2.1rem;
         margin: 0%;
         margin-bottom: 22px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 
     .home-navigation li {
-        font-size: 32px;
+        font-size: 2.5rem;
         color: #939393;
         margin-top: 24px;
         padding: 0;
@@ -89,7 +107,7 @@ p {
 @media screen and (min-width: 768px) {
 
     .container {
-        max-width: 600px;
+        max-width: 650px;
         margin-top: 80px;
     }
 
@@ -116,7 +134,7 @@ p {
     }
 
     p {
-        font-size: 18px;
+        font-size: 1.5rem;
     }
     
     
@@ -138,7 +156,7 @@ p {
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 3rem;
         margin: 0;
         padding: 0;
         margin-bottom: 32px;
@@ -161,7 +179,7 @@ p {
 
     .container {
         max-width: 800px;
-        margin-top: 160px;
+        margin-top: 80px;
     }
 
     .body-copy {
@@ -177,7 +195,7 @@ p {
     }
 
     h2 {
-        font-size: 42px;
+        font-size: 3rem;
         margin: 0;
     }
 
@@ -190,6 +208,10 @@ p {
         color: #939393;
         margin-top: 32px;
         padding: 0;
+    }
+
+    footer .copy {
+        margin-top: 7rem;
     }
     
 }
