@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gami</title>
+    <link rel="stylesheet" href="../nav.css" type="text/css">
+    <link rel="stylesheet" href="work.css" type="text/css">
+</head>
+
+
+
+<body>
+
+    <header>
+
+        <h2 class="home"><a href="../index.html">Haroon Matties</a></h2>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <nav>
+
+        <ul>
+            <li class="selected"><a href="../work.html">Work</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+
+    </header>
+
+    <img class="cover" src="../images/gami/set.jpg" alt="gami cover">
+
+    <div class="container">
+
+        <div id="category2" class="context">
+
+            <div class="heading">
+
+                <h1>Context</h1>
+
+            </div>
+
+            <h2 class="special6">Gami is a flat-packing parametric furniture series. The origami-inspired series can be built into footstools, barstools, coffee tables, night stands, and more.</h2>
+
+            <p class="pplus">Gami’s simple, yet elegant form fits perfectly into any modern home, and can especially help those looking to save space.</p>
+
+
+        </div>
+
+        <div class="info-container">
+
+            <div class="info">
+
+                <h3>My Role</h3>
+                <hr>
+                <p>Furniture Designer</p>
+                <p>Developer</p>
+
+            </div>
+
+            <div class="info">
+
+                <h3>Tools</h3>
+
+                <hr>
+
+                <p>Rhino 3D + Grasshopper</p>
+                <p>Blender</p>
+                <p>After Effects</p>
+
+            </div>
+
+            <div class="info">
+
+                <h3>Timeline</h3>
+
+                <hr>
+
+                <p>5 Weeks</p>
+
+            </div>
+
+            </div>
+
+    </div>
+
+
+    <div id="category" class="process container">
+
+
+
+
+        <div class="category">
+            <div class="heading">
+                <h1>Process</h1>
+            </div>    
+        </div>
+
+
+        <div class="content">
+
+            <div  id="section2" class="primer">
+
+                <h3 class="special">Research at a glance 🔍</h3>
+            <p>The core of Gami’s research lied in two distinct places. One, being the fundamentals of computational design, specifically, parametricism. The other core research category was understanding traditional origami practices, this require a lot of hand and scaled modeling to understand how rigid structure could be created from 2D patterns.</p>
+    
+            </div>    
+
+            <div id="section2">
+                <h2>Utilizing a Parametric Methodology</h2>
+                <p class="pplus">Traditional computational methods, like generative design, rely on code to drive the form of an object. Gami utilizes a parametric ideology which allows designers to make overarching changes to their design in real-time.  </p>
+    
+                <img id="center" src="../images/gami/Parametric.svg" alt="parametric visualization">
+    
+                <p>This parametric methodology allowed me to maintain my control over the form of Gami, while also being able to easily manipulate the scale and fit of whatever form factor the user might desire. This computational usage represents one component of Gami’s creation. Parametric design was primarily used here to facilitate the production of the many offshoots and form factors Gami can take. The other primary ideation method revolved around origami inspired direct modeling to discern the form that Gami would take.</p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <div id="category" class="ideation container">
+
+        <div class="heading">
+
+            <h1>Ideation</h1>
+
+        </div>
+
+        <div id="section2" class="models">
+
+            <div class="copy">
+
+                <h3>Ideating Through Making</h3>
+                <p>The other major component to Gami’s creation revolved around direct modeling. Though computation was used heavily here, I still sought to utilize an iterative process of making to identify a unique and beautiful final form for Gami. 
+                </p>
+
+
+            </div>
+
+            <img id="center2" src="../images/gami/models.jpg" alt="models">
+
+            <div class="copy">
+
+                <p>A majority of my research and inspiration came from studying traditional origami patterns and forms. Upon coming to a consensus on the final form of Gami, I then implemented me concept into code, which allowed me to seamlessly adjust parameters as necessary. </p>
+
+            </div>
+
+
+
+        </div>
+
+        
+
+    </div>
+
+
+
+
+    <div id="category" class="scripting container">
+
+
+        <div class="heading">
+            <h1>Scripting</h1>
+        </div>    
+
+
+        <div id="section2" class="primer">
+
+            <h3 class="special">Scripting</h3>
+        <p>Building Gami’s script required a basic understanding of object-oriented programming, and a deep understanding of the underlying geometry and trigonometry that builds the form of Gami. Using a mathematically syntax was essential to allow Gami to truly act parametrically.</p>
+
+        </div>    
+
+
+
+        <div id="section2">
+
+
+
+            <div class="copy">
+
+                <h3>Scripting overview</h3>
+                <p>Gami was built using Grasshopper, a visual, node-base, scripting plugin for rhino 3D. Below you can see both a visual representation of how the form is parametrically being built, and the raw nodes building gami.</p>
+
+            </div>
+
+        <img id="center2" src="../images/gami/scriptViz-03.svg" alt="script visualization">
+
+        </div>
+
+
+
+
+        <div id="section2">
+
+            <div class="copy">
+
+                <h3>Grasshopper</h3>
+                <p>Gami’s node structure builds form from point relationships. All these relationships are based on the initial bounding box, which is defined by the user, or preset standardized sizes. From there, all the panels and lid are then built to fit and fold perfectly. At certain checkpoints throughout the script the designer can intervene to account for various manufacturing constraints.</p>
+
+            </div>
+
+            <img id="center2" src="../images/gami/script.png" alt="script">
+
+        </div>
+
+        
+
+    </div>
+
+
+
+
+    <div id="category" class="solution container">
+
+        <div class="heading">
+            <h1>Gami</h1>
+        </div>  
+
+        <div id="section2">
+
+        <div class="copy">
+            <h3>Flat-packing Functionality</h3>
+            <p>Gami is designed to be packed flat for storage and travel. When being built, it utilizes a convenient zipper to form the body and a steel tension hook to give the form rigidity.</p>
+
+        </div>
+
+        <img id="center3" src="../images/gami/build.jpg" alt="gami build">
+
+
+        <p>No matter the scale or form factor, Gami utilizes the same tools to create its form. The build process is quick and easy, with the core steps outlined above. Zip up the body, place on the lid, and pull the tension clip. Upon finishing these steps, you’re ready to use Gami however you make like. </p>
+
+        <img id="center3" src="../images/gami/buildGuide-04.svg" alt="ikea build guide">
+
+
+
+        </div>
+
+
+
+        <div  id="section2" class="gallery">
+
+            <figure class="gallery-item gallery-item--1">
+                <img src="../images/gami/zipper.jpg" class="gallery-img" alt="Zipper functionality">
+            </figure>
+
+            <figure class="gallery-item gallery-item--2">
+                <img src="../images/gami/panels.jpg" class="gallery-img" alt="Panel close-up">
+            </figure>
+
+            <figure class="gallery-item gallery-item--3">
+                <img src="../images/gami/pullZoom.jpg" class="gallery-img" alt="Clip functionality">
+            </figure>
+
+            <figure class="gallery-item gallery-item--4">
+                <img src="../images/gami/clip.jpg" class="gallery-img" alt="Bottom close-up">
+            </figure>
+
+            <figure class="gallery-item gallery-item--5">
+                <img src="../images/gami/full.jpg" class="gallery-img" alt="Gami">
+            </figure>
+
+            <figure class="gallery-item gallery-item--6">
+                <img src="../images/gami/admire.jpg" class="gallery-img" alt="user placing a hand on gami">
+            </figure>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="category" id="section" class="container">
+
+        <div class="content">
+
+            <h3>Parametric Purchasing</h3>
+            <p>With computational and parametric design processes becoming more present in the market each year, it’s important to consider how this process can be communicated to the consumer. Here you can see a concept for how the purchasing of tomorrow might look.</p>
+
+        </div>
+
+        <div class="video">
+            <iframe src="https://player.vimeo.com/video/545009314?h=5235741f90" width="900" height="506.25" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+    </div>
+
+
+    <div id="category" class="takeaways container">
+
+        <div class="heading">
+            <h1>Takeaways</h1>
+        </div>    
+
+        <div id="section2">
+
+
+            <div  id="takeaways" class="primer">
+
+                <h3 class="special">Personalization is the future of product</h3>
+                <p>The adoption of computation in the design process allows us creators to work with data in ways before unseen. This not only allows us to optimize the ideation and production process, but also allows us to provide users with unique and personalized products. This focus in nature has the product adapt to the individual user, rather than the user adapting to the product and its constraints.</p>
+        
+                </div>    
+        
+            <div id="takeaways" class="primer">
+        
+                    <h3 class="special">Designing with data is essential</h3>
+                    <p>Data is everywhere. Though not a replacement for traditional qualitative design research methods, it is an extremely useful tool that can enhance outcomes of any design process.</p>
+            
+                    </div>    
+        
+            <div id="takeaways" class="primer">
+        
+                        <h3 class="special">Computation/novel technology aids the designer, not directs them</h3>
+                        <p>Novel technologies, like computational design tools, can often be deceptive in how they can and should be used. Their true strength lies in their support of the designer, not their control. forgoing this ideal results in a world that suffocates the fingerprint, or the identity of a designer.</p>
+                
+                </div>    
+            
+        </div>
+
+
+    </div>
+
+
+
+         <!-- footer -->
+        <footer>
+
+                        <div class="foot">
+                
+                            <div class="elements">
+                
+                                <div class="element1">
+                
+                                    <p class="copy">&copy Haroon Matties 2022</p>
+                
+                                </div>
+                
+                
+                                <div class="element2">
+                
+                                    <p class="copy">Built from scratch :)</p>
+                
+                                </div>
+                
+                
+                                <div class="element3">
+                
+                                    <p class="link"><a href="../index.html">Home</a></p>
+                
+                                    <p class="divider">|</p>
+                
+                                    <p class="link"><a href="../work.html">Work</a></p>
+                
+                                    <p class="divider">|</p>
+                
+                                    <p class="link"><a href="../about.html">About</a></p>
+                
+                                    <p class="divider">|</p>
+                
+                                    <p class="link"><a href="../contact.html">Contact</a></p>
+                
+                
+                                </div>
+                
+                
+                
+                
+                            </div>
+                
+                
+                        </div>
+                
+                
+                
+         </footer>
+            
+    
+
+    
+</body>
+
+
+
+
+
+
+</html>
+
