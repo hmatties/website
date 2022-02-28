@@ -331,6 +331,14 @@ h3 {
     margin: 40px auto;
 }
 
+.carousel4 {
+    position: relative;
+    height: fit-content;
+    width: 90%;
+    height: 340px;
+    margin: 40px auto;
+}
+
 .carousel-track-container {
     height: 100%;
     position: relative;

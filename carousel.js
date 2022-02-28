@@ -15,7 +15,7 @@ const navs = document.querySelectorAll('.carousel-nav');
 
 console.log(navs);
 
-let currentSlides = [0, 0, 0];
+let currentSlides = [0, 0, 0, 0];
 
 // const slideSize = slides[0].getBoundingClientRect();
 // const slideWidth = slideSize.width;
