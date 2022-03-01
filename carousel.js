@@ -1,37 +1,15 @@
 const tracks = document.querySelectorAll('.carousel-track');
-// const track2 = document.querySelector('.carousel-track-2');
-// const track3 = document.querySelector('.carousel-track-3');
-
-// const slides = Array.from(track.children);
-// const slides2 = Array.from(track2.children);
-// const slides3 = Array.from(track3.children);
 
 const nextButtons = document.querySelectorAll('.carousel-button--right');
 const prevButtons = document.querySelectorAll('.carousel-button--left');
 const navs = document.querySelectorAll('.carousel-nav');
 // const dots = Array.from(navs.children);
 
-
-
-console.log(navs);
+// console.log(dots);
 
 let currentSlides = [0, 0, 0, 0];
+let currentDots = [0, 0, 0, 0];
 
-// const slideSize = slides[0].getBoundingClientRect();
-// const slideWidth = slideSize.width;
-
-// const slideSize2 = slides2[0].getBoundingClientRect();
-// const slideWidth2 = slideSize2.width;
-
-// const slideSize3 = slides3[0].getBoundingClientRect();
-// const slideWidth3 = slideSize3.width;
-
-
-
-
-// console.log(slides);
-// console.log(slides2);
-// console.log(slides3);
 
 //arrange slides next to one another
 
@@ -39,19 +17,6 @@ const setSlidePosition = (slide, index, width) => {
     slide.style.left = width * index + 'px';
 }
 
-// const setSlidePosition2 = (slide, index) => {
-//     slide.style.left = slideWidth2 * index + 'px';
-// }
-
-// const setSlidePosition3 = (slide, index) => {
-//     slide.style.left = slideWidth3 * index + 'px';
-// }
-
-
-
-// slides.forEach(setSlidePosition);
-// slides2.forEach(setSlidePosition);
-// slides3.forEach(setSlidePosition);
 
 tracks.forEach(track => {
     
@@ -61,8 +26,12 @@ tracks.forEach(track => {
         setSlidePosition(slides[i], i, slideWidth);
     })
     
-
 })
+
+
+
+
+
 
 //functions (reusable)
 
@@ -90,14 +59,6 @@ const hideShow = (slides, prevButton, nextButton, targetIndex) => {
     }
 }
 
-// hideShow.forEach( (button, i) => {
-
-//     const prevButton = prevButtons[i];
-//     const nextButton = nextButtons[i];
-//     const slides = Array.from(track.children);
-
-// })
-
 
 
 //next button arrays
@@ -116,28 +77,21 @@ nextButtons.forEach( (button, i) => {
     const nav = navs[i];
     const dots = Array.from(nav.children);
 
-    console.log(dots);
-    
 
     button.addEventListener('click', e => {
 
-        // const currentSlide = track.querySelector('.current-slide');
-        // const nextSlide = currentSlide.nextElementSibling;
-        // const currentDot = nav.querySelectorAll('.current-slide');
-        // const nextDot = currentDot[i].nextElementSibling;
-        // const nextIndex = slides.findIndex(slide => slide === nextSlide);
         const currentSlideIndex = currentSlides[i];
         const currentSlide = slides[currentSlideIndex];
         const nextSlide = currentSlide.nextElementSibling;
 
-        const currentDotIndex = dots[i];
-        const currentDot = nav[currentDotIndex];
-        // const nextDot = currentDot.nextElementSibling;
+        const currentDotIndex = currentDots[i];
+        const currentDot = dots[currentDotIndex];
 
-        console.log(currentDot);
-        // console.log(nextDot);
+        const nextDot = currentDot.nextElementSibling;
+
 
         currentSlides[i]++;
+        currentDots[i]++;
 
 
         nextIndex = (currentSlideIndex + 1) % slides.length;
@@ -145,7 +99,7 @@ nextButtons.forEach( (button, i) => {
         //move to the next slide
     
         moveToSlide(track, currentSlide, nextSlide);
-        // updateDots(currentDot, nextDot);
+        updateDots(currentDot, nextDot);
         hideShow(slides, prevButton, nextButton, nextIndex);
     
     });
@@ -166,17 +120,30 @@ prevButtons.forEach( (button, i) => {
     const prevButton = prevButtons[i];
     const nextButton = nextButtons[i];
 
+    const nav = navs[i];
+    const dots = Array.from(nav.children);
+
     button.addEventListener('click', e  => {
 
         const currentSlideIndex = currentSlides[i];
         const currentSlide = slides[currentSlideIndex];
 
         const prevSlide = currentSlide.previousElementSibling;
+
+        const currentDotIndex = currentDots[i];
+        const currentDot = dots[currentDotIndex];
+
+        const prevDot = currentDot.previousElementSibling;
+
+
         currentSlides[i]--;
+        currentDots[i]--;
+
 
         prevIndex = (currentSlideIndex - 1) % slides.length;
         
         moveToSlide(track, currentSlide, prevSlide);
+        updateDots(currentDot, prevDot);
         hideShow(slides, prevButton, nextButton, prevIndex);
 
     })
@@ -185,42 +152,17 @@ prevButtons.forEach( (button, i) => {
 
 
 
-//nextButton.addEventListener('click', e => {
-
-    // const currentSlide = track.querySelector('.current-slide');
-    // const nextSlide = currentSlide.nextElementSibling;
-    // const currentDot = nav.querySelector('.current-slide');
-    // const nextDot = currentDot.nextElementSibling;
-    // const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
 
-    //move to the next slide
 
-    // moveToSlide(track, currentSlide, nextSlide);
-    // updateDots(currentDot, nextDot);
+//indicator functions 
 
 
-// });
 
 
-//when i click left, move slides to the left 
-
-// prevButton.addEventListener('click', e => {
-//     const currentSlide = track.querySelector('.current-slide');
-//     const prevSlide = currentSlide.previousElementSibling;
-//     const currentDot = nav.querySelector('.current-slide');
-//     const prevDot = currentDot.previousElementSibling;
-//     const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
 
-//     moveToSlide(track, currentSlide, prevSlide);
-//     updateDots(currentDot, prevDot);
-//     hideShow(slides, prevButton, nextButton, prevIndex);
 
-// });
-
-
-// //indicator functions 
 
 // nav.addEventListener('click', e => {
 
