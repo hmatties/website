@@ -340,7 +340,15 @@ img {
     display: none;
 }
 
+.high {
+    margin-top: 1rem;
+}
 
+.low {
+    border-left: 0.15rem solid #acacac;
+    padding-left: 1rem;
+    font-size: 14px;
+}
 
 
 
