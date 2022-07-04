@@ -1,220 +1,84 @@
-html {
-    font-family: Helvetica Neue, Helvetica, Open Sans Pro, sans-serif;
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    max-width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-p {
-   font-weight: 300;
+h1 {
+    font-size: 48px;
+    margin-top: 0;
 }
 
-.body-copy .jmu-link {
-   color: black;
-   transition-property: color;
-   transition-duration: 00.2s;
-}
-
-.body-copy .jmu-link:hover {
-    color: #AD50E7;
- }
-
-.home-navigation li {
-    list-style: none;
-    margin: 0%;
-    padding: 22px;
-    padding-left: 0%;
-}
-
-.home-navigation ul {
+p, .text  {
+    font-size: 36px;
+    color: #979797;
     margin: 0;
-    padding: 0px;
 }
 
-.home-navigation li a {
-    text-decoration: underline;
-    color: #939393;
-    transition-property: color;
-    transition: transform .2s;
-    transition-duration: 0.5s;
+.small-link {
+    font-size: 24px;
+    color: #D5D5D5;
+    padding-right: 2rem;
+    margin: 0;
 }
 
-.home-navigation li a:hover {
-    color: #AD50E7;
-    display: inline-block;
-    transform: scale(1.05);
-}
-
-.container {
+.links {
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    margin-top: 2rem;
 }
 
-footer .cright {
-    font-size: 1rem;
-   text-align: center;
-   font-weight: 400;
-   color: #c3c3c3;
+.big-link {
+    color: #979797;
 }
 
-footer .copy {
-    margin-top: 4rem;
+a {
+    transition-property: color;
+    transition: .1s ease-in-out;
+}
+
+a:hover {
+    color: rgb(232, 55, 232);
 }
 
 
-@media screen and (max-width: 375px) {
-    
-    .container {
-        max-width: 300px !important;
-    }
+@media only screen and (max-width: 768px) {
 
-    .top h1 {
-        font-size: 2.3rem;
-    }
+    body {
+        transform: unset;
+        top: unset;
+        left: unset;
+        position: unset;
 
-}
-
-@media screen and (max-width: 767px) {
-
-    .container {
-        max-width: 350px;
+        max-width: 85vw;
         margin: auto;
+        transform: translateY(50%);
     }
-
+   
     h1 {
-        font-size: 2.5rem;
-        color: #AD50E7;
-        margin: 0%;
-        margin-top: 32px;
-        margin-bottom: 10px;
-    }
-
-    h2{
-        font-size: 2.1rem;
-        margin: 0%;
-        margin-bottom: 22px;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    .home-navigation li {
-        font-size: 2.5rem;
-        color: #939393;
-        margin-top: 24px;
-        padding: 0;
-    
-}
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .container {
-        max-width: 650px;
-        margin-top: 80px;
-    }
-
-    h1 {
-        font-size: 48px;
-        color: #AD50E7;
-        margin: 0%;
-        padding: 0;
-        margin-bottom: 16px;
-    }
-
-    h2 {
-        font-size: 36px;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 32px;
-    }
-
-    .home-navigation li {
-        font-size: 38px;
-        color: #939393;
-        margin-top: 30px;
-        padding: 0;
-    }
-
-    p {
-        font-size: 1.5rem;
+        font-size: 26px;
+        margin-top: 0;
     }
     
-    
-}
-
-@media screen and (min-width: 900px) {
-    
-    .container {
-        max-width: 800px;
-        margin-top: 80px;
-    }
-
-    h1 {
-        font-size: 62px;
-        color: #AD50E7;
-        margin: 0%;
-        padding: 0;
-        margin-bottom: 16px;
-    }
-
-    h2 {
-        font-size: 3rem;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 32px;
-    }
-
-    .home-navigation li {
-        font-size: 58px;
-        color: #939393;
-        margin-top: 30px;
-        padding: 0;
-    }
-
-    p {
+    p, .text  {
         font-size: 24px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
-
-    .container {
-        max-width: 800px;
-        margin-top: 80px;
-    }
-
-    .body-copy {
+        color: #979797;
         margin: 0;
-        margin-top: 24px;
-    }
-
-    h1{
-        font-size: 62px;
-        color: #AD50E7;
-        margin: 0;
-        margin-bottom: 12px;
-    }
-
-    h2 {
-        font-size: 3rem;
-        margin: 0;
-    }
-
-    p {
-        font-size: 24px;
-    }
-
-    .home-navigation li {
-        font-size: 58px;
-        color: #939393;
-        margin-top: 32px;
-        padding: 0;
-    }
-
-    footer .copy {
-        margin-top: 7rem;
+        padding-top: 1rem;
     }
     
-}
+    .small-link {
+        font-size: 24px;
+        color: #D5D5D5;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+  }
